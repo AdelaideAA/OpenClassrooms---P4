@@ -8,7 +8,7 @@ body {
 }
 
 :focus-visible {
-    border: 2px solid blue;
+    border: 2px solid #457FBE;
 
 }
 
@@ -282,13 +282,15 @@ a:hover {
     padding-right: 0;
     padding-left: 0;
 }
-
+#bloc-8{
+    background-color: #3D75BE;
+}
 #bloc-1-hero h1 {
     font-size: 32px;
 }
 
 .navbar {
-    margin-bottom: 0;
+    margin: auto;
     z-index: 1;
 }
 
@@ -342,19 +344,26 @@ a:hover {
     border: 0px;
 }
 
-.navbar-toggle:hover {
-    background: transparent !important;
+.navbar-toggle:hover{
+    background: transparent!important; 
+}
+
+.navbar-toggle:focus-visible{
+    border: 1px solid #457FBE;
 }
 
 .navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, .5);
-    width: 26px;
+    width: 32px;
+    height: 4px;
 }
 
 .nav-invert .navbar .nav {
     float: left;
 }
-
+.img-responsive{
+    width:100%;
+}
 .nav-invert .navbar-header,
 .nav-invert .navbar-brand {
     float: right;
@@ -527,13 +536,14 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
+    
 }
 
 .scrollToTop span {
     margin-top: 6px;
+    color: #FFF !important;
 }
 
 .showScrollTop {
@@ -660,6 +670,7 @@ a[data-lightbox]:hover img {
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
+    color: #4e4c50;
 }
 
 h1,
@@ -675,6 +686,10 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757 !important;
+}
+
+a:hover{
+    text-decoration: underline!important;
 }
 
 .container {
@@ -719,7 +734,7 @@ p {
     color: #FFFFFF !important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -777,14 +792,14 @@ h4 {
 }
 
 .black-background {
-    background-color: rgb(51 37 37 / 95%);
-    /*rgb(100 83 80 / 95%)*/
+    background-color: #262222f2;
     padding: 40px 40px 40px 40px;
 }
 
 .bold-link {
     font-weight: 900;
     text-decoration: underline !important;
+    padding: 5px 5px;
 }
 
 .bgc-white {
@@ -792,7 +807,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #457FBE;
 }
 
 
@@ -801,17 +816,21 @@ h4 {
 }
 
 .tc-atomic-tangerine {
-    color: #F3976C !important;
+    color: #457FBE !important;
+}
+.weight-text{
+    font-weight: bold;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #3D75BE;
     color: #FFFFFF !important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956 !important;
+    background: #519BD5!important;
     color: #FFFFFF !important;
+    font-size: 22px !important;
 }
 
 .ltc-white {
@@ -840,15 +859,16 @@ h4 {
 }*/
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    /*background-image: url("img/lines-h2-bg.png");*/
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    /*background-image: url("img/agence-la-panthere.jpg");*/
+    background-color: #457FBE;
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    /*background-image: url("img/image-de-presentation.jpg");*/
 }
 
 @media (max-width: 1024px) {
@@ -1094,4 +1114,8 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.footer-title{
+    font-size:18px;
 }
