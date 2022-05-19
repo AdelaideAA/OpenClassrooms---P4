@@ -48,8 +48,8 @@
 						<a class="navbar-brand" href="index.html">
 							<img src="img/agence-la-panthere-monochrome.svg" alt="La Panthère, Agence de web design"
 								height="40" /></a>
-						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle"
-							data-toggle="collapse" data-target=".navbar-1">
+						<button aria-expanded="false" aria-haspopup="menu" aria-label="open-menu" id="nav-toggle" 
+								type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" aria-expanded="true">
 							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
 								class="icon-bar"></span><span class="icon-bar"></span>
 						</button>
@@ -72,7 +72,7 @@
 
 		<!-- bloc-6 -->
 		<main>
-			<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
+			<div role="region" aria-label="banner" class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
 				id="bloc-6">
 				<div class="container bloc-lg">
 					<div class="row tight-width-whitespace black-background">
@@ -107,7 +107,7 @@
 									<label for="email">
 										Adresse email
 									</label>
-									<input id="email" class="form-control" type="email" aria-required="true" aria-invalid="false"
+									<input id="email" class="form-control" type="email" aria-required="true" aria-invalid="true"
 									onblur="checkValidity('courriel', '@', 'L’adresse électronique saisie n’est pas valide');"/>
 								</div>
 								<div class="form-group">
