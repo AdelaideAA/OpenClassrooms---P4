@@ -6,11 +6,30 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+:root{
+    --color-primary: #457FBE;
+    --color-secondary: #3D75BE;
+    --ligther-secondary : #519BD5;
+    --background-color: #262222f2;
+}
+
+/*:root{
+    --color-primary:#F3976C;
+    --color-secondary:#F3976C;
+    --ligther-secondary:#c27956;
+    --background-color:rgba(165, 147, 99, 0.7);
+}*/
 
 :focus-visible {
-    border: 2px solid #457FBE;
+    border: 2px solid var(--color-secondary);
 
 }
+
+.style-banner{
+    height: 40px;
+    width: 216px;
+}
+
 
 a,
 button {
@@ -283,7 +302,7 @@ a:hover {
     padding-left: 0;
 }
 #bloc-8{
-    background-color: #3D75BE;
+    background-color: var(--color-secondary);
 }
 #bloc-1-hero h1 {
     font-size: 32px;
@@ -349,7 +368,7 @@ a:hover {
 }
 
 .navbar-toggle:focus-visible{
-    border: 1px solid #457FBE;
+    border: 1px solid var(--color-secondary);
 }
 
 .navbar-toggle .icon-bar {
@@ -489,7 +508,6 @@ button {
 }
 .black-focus:focus-visible{
     border: 3px solid black;
-    background-color: #519bd5;
     font-size: 20px;
 }
 
@@ -668,13 +686,14 @@ a[data-lightbox]:hover img {
     font-weight: bold;
     font-size: 20px;
     font-style: italic;
+    color: #575757;
 }
 
 .auteur {
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
-    color: #4e4c50;
+    color: #262222f2;
 }
 
 h1,
@@ -756,7 +775,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333 !important;
+    color: #262222f2 !important;
 }
 
 .med-width-whitespace {
@@ -784,6 +803,16 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
+    height: 100%;
+}
+.style-title-h2{
+    width: fit-content;
+    margin: auto;
+}
+.style-logo{
+    width: 100px;
+    height: 100px;
 }
 
 .portfolio-row {
@@ -796,7 +825,7 @@ h4 {
 }
 
 .black-background {
-    background-color: #262222f2;
+    background-color: var(--background-color);
     padding: 40px 40px 40px 40px;
 }
 
@@ -811,7 +840,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #457FBE;
+    background-color: var(--color-primary);
 }
 
 
@@ -820,19 +849,19 @@ h4 {
 }
 
 .tc-atomic-tangerine {
-    color: #457FBE !important;
+    color: var(--color-primary) !important;
 }
 .weight-text{
     font-weight: bold;
 }
 
 .btn-atomic-tangerine {
-    background: #3D75BE;
+    background: var(--color-secondary);
     color: #FFFFFF !important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #519BD5!important;
+    background: var(--ligther-secondary)!important;
     color: #FFFFFF !important;
     font-size: 22px !important;
 }
@@ -861,14 +890,13 @@ h4 {
 /*.bg-dots-bg {
     background-image: url("img/dots-bg.png");
 }*/
-
 .bg-lines-h2-bg {
     /*background-image: url("img/lines-h2-bg.png");*/
 }
 
 .bg-banniere {
     /*background-image: url("img/agence-la-panthere.jpg");*/
-    background-color: #457FBE;
+    background-color: var(--color-primary);
 }
 
 .bg-presentation {
