@@ -6,19 +6,19 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-:root{
+/*:root{
     --color-primary: #457FBE;
     --color-secondary: #3D75BE;
     --ligther-secondary : #519BD5;
     --background-color: #262222f2;
-}
+}*/
 
-/*:root{
+:root{
     --color-primary:#F3976C;
     --color-secondary:#F3976C;
-    --ligther-secondary:#c27956;
-    --background-color:rgba(165, 147, 99, 0.7);
-}*/
+    --ligther-secondary:#f9a57f;
+    --background-color:#262222;
+}
 
 :focus-visible {
     border: 2px solid var(--color-secondary);
@@ -142,7 +142,7 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
+/*.d-bloc a .icon-md,*/
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -159,7 +159,7 @@ a:hover {
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
 .d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
+/*.d-bloc a:hover .icon-md,*/
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
 .d-bloc h1 a:hover,
@@ -520,8 +520,18 @@ button {
 
 .icon-md {
     font-size: 30px !important;
+    color: #36251F;
+    transform: scale(1);
+    transition-duration: 400ms;
+}
+.icon-md:hover {
+    transform: scale(1.20);
+    color: black;
 }
 
+.txt-sombre{
+    color: #36251F !important;
+}
 .icon-lg {
     font-size: 60px !important;
 }
@@ -839,9 +849,9 @@ h4 {
     background-color: #FFFFFF;
 }
 
-.bgc-atomic-tangerine {
+/*.bgc-atomic-tangerine {
     background-color: var(--color-primary);
-}
+}*/
 
 
 .tc-white {
@@ -857,13 +867,14 @@ h4 {
 
 .btn-atomic-tangerine {
     background: var(--color-secondary);
-    color: #FFFFFF !important;
+    color: #36251F !important;
 }
 
 .btn-atomic-tangerine:hover {
     background: var(--ligther-secondary)!important;
-    color: #FFFFFF !important;
+    color: black !important;
     font-size: 22px !important;
+    text-decoration: underline;
 }
 
 .ltc-white {
@@ -890,17 +901,17 @@ h4 {
 /*.bg-dots-bg {
     background-image: url("img/dots-bg.png");
 }*/
-.bg-lines-h2-bg {
-    /*background-image: url("img/lines-h2-bg.png");*/
-}
+/*.bg-lines-h2-bg {
+    background-image: url("img/lines-h2-bg.png");
+}*/
 
 .bg-banniere {
-    /*background-image: url("img/agence-la-panthere.jpg");*/
-    background-color: var(--color-primary);
+    background-image: url("img/agence-la-panthere.jpg");
+    /*background-color: var(--color-primary);*/
 }
 
 .bg-presentation {
-    /*background-image: url("img/image-de-presentation.jpg");*/
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
